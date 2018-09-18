@@ -180,7 +180,7 @@ nav{
     width: 420px;
     position: relative;
     bottom: -80px;
-    box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.08);
+    box-shadow: 8px 8px 24px 5px rgba(0,0,0,0.08);
 }
 
 .searchBlock h3{
@@ -238,6 +238,7 @@ nav{
     font-weight: bold;
     display: flex;
     justify-content: center;
+    text-decoration: none;
     align-items: center;
 }
 
