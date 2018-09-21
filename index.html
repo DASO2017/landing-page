@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Eventhype.</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="cards.css">
+    <title>Eventhype</title>
 </head>
 <body>
-    <div class="navBar">
+    <section class="navBar">
         <nav>
             <div class="navWrapper">
-                <a class="logo" href="#">Eventhype.</a>
+                <a class="logo" href="#">Eventhype</a>
                 <div class="desktopNav">
                     <div class="nav-create" href="#">
                         <a class="createEvent" href="#">Create Event
@@ -27,8 +28,8 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <div class="header">
+    </section>
+    <section class="header">
         <div class="headerBackground">
             <img src="images/background-header.jpg" alt="header background">
         </div>
@@ -46,14 +47,14 @@
                 <div class="searchBlockWrapper">
                     <div class="searchBlock">
                         <h3>Where?</h3>
-                        <input type="text">
+                        <input id="where" type="text">
                         <h3>What?</h3>
-                        <input type="text">
+                        <input id="what" type="text">
                         <h3>When?</h3>
                         <div class="timeSpan">
-                            <input type="text">
+                            <input id="when1" type="text">
                             <div class="timeHyphen"></div>
-                            <input type="text">
+                            <input id="when2" type="text">
                         </div>
                         <div class="btn">
                             <a href="#">
@@ -65,7 +66,78 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="content">
+        <div class="eventsTitle">
+            <h1>Events</h1>
+            <div class="titleUnderscore">
+            </div>
+            <div class="filters">
+                <a href="#">
+                    <img src="images/sort.png" alt="sort icon">
+                    <h3>Votes</h3>
+                </a>
+                <a href="#">
+                    <img src="images/sort.png" alt="sort icon">
+                    <h3>Location</h3>
+                </a>
+                <a href="#">
+                    <img src="images/sort.png" alt="sort icon">
+                    <h3>Date</h3>
+                </a>
+            </div>
+        </div>
+        <div class="events">
+            <div class="event">
+                <div class="eventWrapper">
+                    <div class="eventContent">
+                        <div class="eventContentGrid">
+                            <div class="imageContainer">
+                                <img src="images/events/event1.jpg" alt="event preview">
+                            </div>
+                            <div class="eventDescription">
+                                <h2>Title</h2>
+                                <div class="contentSeperator"></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis deleniti incidunt quis distinctio aperiam, dolor nulla eveniet debitis? Tempora, nam! Perferendis, obcaecati vel dolores nemo minima non eum aliquid eius sed! Ratione repudiandae esse qui ipsa. Eius vel enim natus nihil pariatur asperiores tempore nostrum rerum odit, corporis at.</p>
+                            </div>
+                            <div class="eventTools">
+                                <div class="eventCreator">
+                                    <a href="#">
+                                        <img src="images/profile.png" alt="profile picture">
+                                        <h4>Jenni</h4>
+                                    </a>
+                                </div>
+                                <div class="votingWrapper">
+                                    <div class="voting">
+                                        <img src="images/up.png" alt="up vote">
+                                        <div class="voteCounterWrapper">
+                                            <h3>+0</h3>
+                                        </div>
+                                        <img src="images/down.png" alt="down vote">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventFooter">
+                        <div class="eventLocation">
+                            <img src="images/location_white.png" alt="location white">
+                            <h3>Kreuzberg, Berlin</h3>
+                        </div>
+                        <div class="eventTime">
+                            <img src="images/clock.png" alt="clock icon">
+                            <h3>16.10.2018 - 17.10.2018 | 20:00 - 2:00 Uhr</h3>
+                        </div>
+                        <div class="eventParticipants">
+                            <img src="images/people.png" alt="people icon">
+                            <h3>200+</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
